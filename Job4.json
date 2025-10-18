@@ -1,0 +1,40 @@
+{
+    "eventType": "COMPLETE",
+    "eventTime": "2025-10-18T09:10:13.770024+10:00",
+    "run": {
+        "runId": "37eb6006-6780-4abe-bf2d-52007f7119432"
+    },
+    "job": {
+        "namespace": "ApacheSparkFileSystem2",
+        "name": "overwrite>"
+    },
+    "inputs": [{
+        "namespace": "new-namespace",
+        "name": "parquet-employees",
+        "facets": {
+            "schema": {
+                "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+                "_schemaURL": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/spec/OpenLineage.json#/definitions/SchemaDatasetFacet",
+                "fields": [
+                    {"name": "id", "type": "INTEGER"},
+                    {"name": "name", "type": "STRING"}
+                ]
+            }
+        }
+    }],
+    "outputs": [{
+        "namespace": "new-namespace",
+        "name": "csv-loaded_data",  
+        "facets": {
+            "schema": {
+                "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+                "_schemaURL": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/spec/OpenLineage.json#/definitions/SchemaDatasetFacet",
+                "fields": [
+                    {"name": "id", "type": "FLOAT"},      
+                    {"name": "name", "type": "BOOLEAN"}  
+            }
+        }
+    }],
+    "producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+    "schemaURL": "https://openlineage.io/spec/1-0-5/OpenLineage.json#/definitions/RunEvent"
+}
