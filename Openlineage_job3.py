@@ -11,24 +11,24 @@ payload = {
     },
     "job": {
         "namespace": "Apache Spark / File System",
-        "name": "new-job"
+        "name": "JobFromGit"
     },
     "inputs": [{
-        "namespace": "new-namespace",
-        "name": "new-input-dataset",
+        "namespace": "Apache Spark / File System",
+        "name": "parquet.employees",
         "facets": {
             "schema": {
                 "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
                 "_schemaURL": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/spec/OpenLineage.json#/definitions/SchemaDatasetFacet",
                 "fields": [
-                    {"name": "input_col1", "type": "INTEGER"},
-                    {"name": "input_col2", "type": "STRING"}
+                    {"name": "id", "type": "INTEGER"},
+                    {"name": "name", "type": "STRING"}
                 ]
             }
         }
     }],
     "outputs": [{
-        "namespace": "new-namespace",
+        "namespace": "Apache Spark / File System",
         "name": "new-output-dataset",
         "facets": {
             "schema": {
