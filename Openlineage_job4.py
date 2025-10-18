@@ -48,5 +48,5 @@ for filepath in json_files:
     )
     
   # Print the response
-print("Status Code:", response.status_code)
-print("Response Body:", response.text)
+    print("Status Code:", response.status_code)
+    print("Response Body:", response.text)
