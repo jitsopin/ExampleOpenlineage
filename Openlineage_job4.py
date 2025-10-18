@@ -43,8 +43,9 @@ for filepath in json_files:
     response = requests.post(
         url,
         headers={'Content-Type': 'application/json'},
-        json=payload
+        data=json.dumps(payload)  # Convert the payload to JSON format
     )
     
-    # Print the response
-    print("Status Code:", response.status_code)
+  # Print the response
+print("Status Code:", response.status_code)
+print("Response Body:", response.text)
