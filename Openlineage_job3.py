@@ -13,11 +13,11 @@ payload = {
     },
     "job": {
         "namespace": "ApacheSparkFileSystem",
-        "name": "new-job"
+        "name": ""
     },
     "inputs": [{
         "namespace": "new-namespace",
-        "name": "new-input-dataset",
+        "name": "parquet-employees",
         "facets": {
             "schema": {
                 "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
