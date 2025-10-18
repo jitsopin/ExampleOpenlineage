@@ -15,7 +15,7 @@ payload = {
     },
     "inputs": [{
         "namespace": "ApacheSparkFileSystem",
-        "name": "parquet.employees",
+        "name": "employees",
         "facets": {
             "schema": {
                 "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
@@ -29,7 +29,7 @@ payload = {
     }],
     "outputs": [{
         "namespace": "ApacheSparkFileSystem",
-        "name": "new-output-dataset",
+        "name": "dataset",
         "facets": {
             "schema": {
                 "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
