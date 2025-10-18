@@ -10,11 +10,11 @@ payload = {
         "runId": "37eb6006-6780-4abe-bf2d-52007f711943"
     },
     "job": {
-        "namespace": "Apache Spark / File System",
+        "namespace": "ApacheSparkFileSystem",
         "name": "JobFromGit"
     },
     "inputs": [{
-        "namespace": "Apache Spark / File System",
+        "namespace": "ApacheSparkFileSystem",
         "name": "parquet.employees",
         "facets": {
             "schema": {
@@ -28,7 +28,7 @@ payload = {
         }
     }],
     "outputs": [{
-        "namespace": "Apache Spark / File System",
+        "namespace": "ApacheSparkFileSystem",
         "name": "new-output-dataset",
         "facets": {
             "schema": {
