@@ -31,7 +31,7 @@ payload = {
     }],
     "outputs": [{
         "namespace": "new-namespace",
-        "name": "new-output-dataset",
+        "name": "employee",
         "facets": {
             "schema": {
                 "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
