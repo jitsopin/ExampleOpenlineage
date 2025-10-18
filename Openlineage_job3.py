@@ -3,6 +3,8 @@ import json
 
 # Define the payload for the new job
 # Define the payload for the new job
+# Define the payload for the new job
+# Define the payload for the new job
 payload = {
     "eventType": "COMPLETE",
     "eventTime": "2025-10-18T09:10:13.770024+10:00",
@@ -11,25 +13,25 @@ payload = {
     },
     "job": {
         "namespace": "ApacheSparkFileSystem",
-        "name": "JobFromGit"
+        "name": "new-job"
     },
     "inputs": [{
-        "namespace": "ApacheSparkFileSystem",
-        "name": "employees",
+        "namespace": "new-namespace",
+        "name": "new-input-dataset",
         "facets": {
             "schema": {
                 "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
                 "_schemaURL": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/spec/OpenLineage.json#/definitions/SchemaDatasetFacet",
                 "fields": [
-                    {"name": "id", "type": "INTEGER"},
-                    {"name": "name", "type": "STRING"}
+                    {"name": "input_col1", "type": "INTEGER"},
+                    {"name": "input_col2", "type": "STRING"}
                 ]
             }
         }
     }],
     "outputs": [{
-        "namespace": "ApacheSparkFileSystem",
-        "name": "dataset",
+        "namespace": "new-namespace",
+        "name": "new-output-dataset",
         "facets": {
             "schema": {
                 "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
@@ -44,7 +46,6 @@ payload = {
     "producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
     "schemaURL": "https://openlineage.io/spec/1-0-5/OpenLineage.json#/definitions/RunEvent"
 }
-
 
 # Define the API endpoint
 url = "http://localhost:5000/api/v1/lineage"
