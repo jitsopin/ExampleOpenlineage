@@ -32,6 +32,7 @@ for filepath in json_files:
     # Read the JSON content from the file
     with open(filepath, 'r') as file:
         payload = json.load(file)  # Load JSON content into a Python dictionary
+        print("Payload:", json.dumps(payload, indent=4))
     
     # If there are datasets to delete, call the delete_datasets function
     if "inputs" in payload:
